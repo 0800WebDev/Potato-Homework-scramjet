@@ -471,15 +471,25 @@ body {
         <div style="font-size:120px;margin-bottom:20px;">🥔</div>
         <h1 style="font-size:36px;font-weight:700;margin-bottom:10px;">OmniSearch</h1>
         <p style="opacity:0.9;font-size:18px;margin-bottom:20px;" id="modeText">
-          Detecting backend mode...
+          backend: PGIS wisp, scramjet.
         </p>
 
         <div class="search-container">
-          <input type="text" class="main-search-input" id="mainSearch" 
+          <input type="text" class="main-search-input" id="searchInput" 
                  placeholder="🔍 Search the web..." autocomplete="off">
           <div class="search-icon" title="Search">🔍</div>
         </div>
 
+
+
+        
+<form class="search-box" id="searchForm">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" id="searchInput" placeholder="Search the web..." autocomplete="off">
+  </form>
+
+
+        
         <div class="features-grid">
           <div class="feature-card" title="CTRL+SHIFT+S to toggle">
             <div style="font-size:24px;margin-bottom:15px;">🥷</div>
