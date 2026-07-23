@@ -1,7 +1,7 @@
 // =====================================================
 // CONFIGURATION - Gets from config.js
 // =====================================================
-const DEFAULT_WISP = window.SITE_CONFIG?.defaultWisp ?? "wss://glseries.net/wisp/";
+const DEFAULT_WISP = window.SITE_CONFIG?.defaultWisp ?? "wss://pgis-wisp.onrender.com";
 const WISP_SERVERS = [{ name: "PGIS Wsip", url: "wss://pgis-wisp.onrender.com" }]; //feel free to change this
 
 // Initialize default proxy server if not set
