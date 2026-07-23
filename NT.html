@@ -475,9 +475,16 @@ body {
         </p>
 
         <div class="search-container">
+           <form class="search-box" id="searchForm">
           <input type="text" class="main-search-input" id="searchInput" 
                  placeholder="🔍 Search the web..." autocomplete="off">
           <div class="search-icon" title="Search">🔍</div>
+           <select id="engine">
+      <option value="https://search.brave.com/search?q=">Brave</option>
+      <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+      <option value="https://www.google.com/search?q=">Google</option>
+    </select>
+        </form>
         </div>
 
 
@@ -609,6 +616,11 @@ body {
 </div>
 
   <script>
+    const $ = s => document.querySelector(s);
+    const nav = url => {
+      $('#loader').classList.add('show');
+      window.parent?.postMessage({ type: 'navigate', url }, '*');
+    };
     // Search
     $('#searchForm').onsubmit = e => {
       e.preventDefault();
