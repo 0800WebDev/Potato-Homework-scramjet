@@ -483,10 +483,7 @@ body {
 
 
         
-<form class="search-box" id="searchForm">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <input type="text" id="searchInput" placeholder="Search the web..." autocomplete="off">
-  </form>
+
 
 
         
@@ -610,6 +607,15 @@ body {
     </div>
   </div>
 </div>
+
+  <script>
+    // Search
+    $('#searchForm').onsubmit = e => {
+      e.preventDefault();
+      const q = $('#searchInput').value.trim();
+      if (q) nav($('#engine').value + encodeURIComponent(q));
+    };
+  </script>
 </body>
 
 </html>
