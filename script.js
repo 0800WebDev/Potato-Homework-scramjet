@@ -207,12 +207,12 @@ async function initializeBrowser() {
                 <button id="back-btn" title="Back"><i class="fa-solid fa-chevron-left"></i></button>
                 <button id="fwd-btn" title="Forward"><i class="fa-solid fa-chevron-right"></i></button>
                 <button id="reload-btn" title="Reload"><i class="fa-solid fa-rotate-right"></i></button>
+                <button id="wisp-settings-btn" title="Proxy Settings"><i class="fa-solid fa-gear"></i></button>
                 <div class="address-wrapper">
                     <input class="bar" id="address-bar" autocomplete="off" placeholder="Search or enter URL">
                     <button id="home-btn-nav" title="Home"><i class="fa-solid fa-house"></i></button>
                 </div>
                 <button id="devtools-btn" title="DevTools"><i class="fa-solid fa-code"></i></button>
-                <button id="wisp-settings-btn" title="Proxy Settings"><i class="fa-solid fa-gear"></i></button>
             </div>
             <div class="loading-bar-container"><div class="loading-bar" id="loading-bar"></div></div>
             <div class="iframe-container" id="iframe-container">
