@@ -469,6 +469,14 @@ body {
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s;
+
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #engine:hover { background: rgba(255, 255, 255, 0.25); }
@@ -493,7 +501,6 @@ body {
            <form class="search-box" id="searchForm">
           <input type="text" class="main-search-input" id="searchInput" 
                  placeholder="🔍 Search the web..." autocomplete="off">
-          <div class="search-icon" title="Search">🔍</div>
            <select id="engine">
       <option value="https://search.brave.com/search?q=">Brave</option>
       <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
