@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OmniSearch</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/gh/Destroyed12121/Staticsj@main/JS/scramjet.all.js" defer></script>
     <script type="module">
@@ -17,7 +18,6 @@
 
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
 <body>
@@ -46,6 +46,40 @@
             </div>
         </div>
     </div>
+
+    
+    <script>
+let cloaked = false;
+
+const originalTitle = document.title;
+const originalFavicon = (() => {
+    const link = document.querySelector("link[rel*='icon']") || document.createElement("link");
+    return link.href;
+})();
+
+document.addEventListener("keydown", e => {
+    if (e.ctrlKey && e.key.toLowerCase() === "g") {
+        e.preventDefault();
+
+        const favicon = document.querySelector("link[rel*='icon']") || (() => {
+            const l = document.createElement("link");
+            l.rel = "icon";
+            document.head.appendChild(l);
+            return l;
+        })();
+
+        if (!cloaked) {
+            document.title = "Google Classroom";
+            favicon.href = "https://ssl.gstatic.com/classroom/favicon.png";
+        } else {
+            document.title = originalTitle;
+            favicon.href = originalFavicon;
+        }
+
+        cloaked = !cloaked;
+    }
+});
+</script>
 </body>
 
 </html>
