@@ -259,7 +259,7 @@ input.bar::placeholder {
     height: 28px;
     background: transparent;
     border: none;
-    color: var(--text-muted);
+    color: white;
     border-radius: 6px;
     cursor: pointer;
     display: flex;
@@ -270,8 +270,9 @@ input.bar::placeholder {
 }
 
 #home-btn-nav:hover {
-    color: var(--text);
-    background: var(--surface-hover);
+      border-color: #8a2be2;
+
+    
 }
 
 /* Loading Bar */
