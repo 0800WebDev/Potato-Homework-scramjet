@@ -150,7 +150,7 @@ body {
 .tab-title {
     flex: 1;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     white-space: nowrap;
     overflow: hidden;
