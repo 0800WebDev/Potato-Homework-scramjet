@@ -334,7 +334,7 @@ function createTab(makeActive = true) {
         } catch { }
 
         if (frame.frame.contentWindow.location.href.includes('NT.html')) {
-            tab.title = "New Tab";
+            tab.title = "OmniSearch";
             tab.url = "";
             tab.favicon = null;
         }
