@@ -3,7 +3,7 @@
 
 :root {
     /* Core colors (can be overridden by user settings) */
-    --bg: #0a0a0a;
+    --bg: linear-gradient(135deg, #1a0033 0%, #2d1b69 25%, #4a0e6a 50%, #2d1b69 75%, #1a0033 100%);
     --surface: #0f0f0f;
     --surface-hover: #1a1a1a;
     --surface-active: #252525;
