@@ -48,7 +48,7 @@
     </div>
 
     
-    <script>
+<script>
 let cloaked = false;
 
 const originalTitle = document.title;
@@ -58,7 +58,7 @@ const originalFavicon = (() => {
 })();
 
 document.addEventListener("keydown", e => {
-    if (e.ctrlKey && e.key.toLowerCase() === "g") {
+    if (e.altKey && e.key.toLowerCase() === "g") {
         e.preventDefault();
 
         const favicon = document.querySelector("link[rel*='icon']") || (() => {
