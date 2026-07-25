@@ -204,8 +204,8 @@ async function initializeBrowser() {
         <div class="browser-container">
             <div class="flex tabs" id="tabs-container"></div>
             <div class="flex nav">
-                <button id="back-btn" title="Back"><i class="fa-solid fa-chevron-left"></i></button>
-                <button id="fwd-btn" title="Forward"><i class="fa-solid fa-chevron-right"></i></button>
+                <button id="back-btn" title="Back"><i class="fas fa-arrow-left"></i></button>
+                <button id="fwd-btn" title="Forward"><i class="fas fa-arrow-right"></i></button>
                 <button id="reload-btn" title="Reload"><i class="fa-solid fa-rotate-right"></i></button>
                 <button id="wisp-settings-btn" title="Proxy Settings"><i class="fa-solid fa-gear"></i></button>
                 <div class="address-wrapper">
