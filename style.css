@@ -129,9 +129,7 @@ body {
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.3s;
-padding-left: 12px;
-  padding-bottom: 12px;
-padding-top: 12px;
+
 }
 
 .tab:hover {
