@@ -279,7 +279,7 @@ function createTab(makeActive = true) {
     const frame = sharedScramjet.createFrame();
     const tab = {
         id: nextTabId++,
-        title: "New Tab",
+        title: "OmniSearch",
         url: "NT.html",
         frame,
         loading: false,
