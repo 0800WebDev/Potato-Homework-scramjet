@@ -104,11 +104,15 @@ body {
 
 /* Tabs */
 .tabs {
-    display: flex;
-    padding: 8px 8px 0;
-    gap: 4px;
-    background: var(--bg);
-    overflow-x: auto;
+ height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  flex-shrink: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .tabs::-webkit-scrollbar {
