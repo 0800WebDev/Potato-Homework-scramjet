@@ -270,9 +270,7 @@ input.bar::placeholder {
 }
 
 #home-btn-nav:hover {
-      border-color: #8a2be2;
-
-    
+    color: #8a2be2;
 }
 
 /* Loading Bar */
