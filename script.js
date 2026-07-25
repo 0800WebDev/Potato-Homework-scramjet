@@ -418,8 +418,8 @@ function updateTabsUI() {
 const iconHtml = tab.loading
     ? `<div class="tab-spinner"></div>`
     : tab.favicon
-        ? `<img src="${tab.favicon}" class="tab-favicon" onerror="this.style.display='none'">`
-        : `<span class="tab-default-icon">🥔</span>`;
+        ? `<img src="${tab.favicon}" " class="tab-favicon" onerror="this.style.display='none'">`
+        : `<span style="font-size:20px;" class="tab-default-icon">🥔</span>`;
 
         el.innerHTML = `${iconHtml}<span class="tab-title">${tab.title}</span><span class="tab-close">&times;</span>`;
         el.onclick = () => switchTab(tab.id);
