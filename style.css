@@ -86,6 +86,14 @@ html,
     color: var(--text);
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a0033 0%, #2d1b69 25%, #4a0e6a 50%, #2d1b69 75%, #1a0033 100%);
+  color: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 /* Layout */
 .browser-container {
     width: 100%;
